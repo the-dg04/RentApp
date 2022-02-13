@@ -7,11 +7,6 @@ mydb=mysql.connector.connect(
 	)
 mycursor=mydb.cursor()
 
-#mycursor.execute('drop database rentApp')
-#mydb.commit()
-
-#mycursor.execute('drop table rents')
-
 mycursor.execute('create database rentApp')
 mydb.commit()
 mycursor.execute('use rentApp')
